@@ -477,6 +477,16 @@ export default function Home() {
     document.querySelector("#quote")?.scrollIntoView({ behavior: "smooth" });
   };
 
+  const goToProduct = (index) => {
+    const el = productRef.current;
+    if (!el) return;
+    const rect = el.getBoundingClientRect();
+    const sectionTop = window.scrollY + rect.top;
+    const scrollable = Math.max(el.offsetHeight - window.innerHeight, 1);
+    const target = sectionTop + (scrollable * index) / Math.max(products.length - 1, 1);
+    window.scrollTo({ top: target, behavior: "smooth" });
+  };
+
   const buildRequest = () => {
     const labels = selectedProducts.map((key) => t.product.names[key]).join(", ");
     return [
@@ -661,7 +671,7 @@ export default function Home() {
                 <button
                   key={p.id}
                   className={i === activeProduct ? "active" : ""}
-                  onClick={() => setActiveProduct(i)}
+                  onClick={() => goToProduct(i)}
                   aria-label={p.name}
                 >
                   <span>{p.id}</span>
