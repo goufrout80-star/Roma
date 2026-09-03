@@ -759,7 +759,7 @@ html[dir="rtl"] .section-label { letter-spacing: 0; text-transform: none; }
   min-height: 330px;
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: flex-end;
   padding: 22px;
   border: 1px solid var(--line);
   border-radius: 26px;
