@@ -605,7 +605,7 @@ html[dir="rtl"] .art-label { letter-spacing: 0; text-transform: none; }
   z-index: 6;
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: flex-end;
   gap: 30px;
 }
 
@@ -710,7 +710,7 @@ html[dir="rtl"] .section-label { letter-spacing: 0; text-transform: none; }
   display: grid;
   grid-template-columns: 1.15fr .85fr;
   gap: 8vw;
-  align-items: end;
+  align-items: flex-end;
 }
 
 .serve h2,
@@ -1483,7 +1483,7 @@ html[dir="rtl"] .about-copy > a { letter-spacing: 0; text-transform: none; }
 .quote-submit {
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: flex-end;
   gap: 28px;
   margin-top: 28px;
 }
@@ -1652,7 +1652,7 @@ footer {
   display: grid;
   grid-template-columns: .6fr 1.1fr .5fr;
   gap: 5vw;
-  align-items: end;
+  align-items: flex-end;
   padding-bottom: 80px;
   border-bottom: 1px solid rgba(255,255,255,.16);
 }
@@ -1908,7 +1908,7 @@ footer .language-switch button.active {
     display: grid;
     grid-template-columns: 1fr auto;
     gap: 8px 20px;
-    align-items: end;
+    align-items: flex-end;
   }
 
   .site--rtl .atlas-info {
@@ -1934,7 +1934,7 @@ footer .language-switch button.active {
   }
 
   .atlas-info button {
-    align-self: end;
+    align-self: flex-end;
     font-size: 7px;
   }
 
