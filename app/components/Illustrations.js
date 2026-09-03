@@ -246,7 +246,10 @@ export function BotanicalPoster() {
       <path className="poster-stem" d="M78 654C205 562 238 417 310 280C363 180 437 111 596 71" fill="none" stroke="currentColor" strokeWidth="4" strokeLinecap="round" />
       <g className="poster-leaf"><Leaf x={306} y={283} r={-47} s={1.3} /></g>
       <g className="poster-leaf poster-leaf--two"><Leaf x={198} y={444} r={148} s={1.1} /></g>
-      <g transform="translate(390 316) scale(.7)"><ProductIllustration type="almonds" /></g>
+      <g className="poster-almond" transform="translate(382 312) rotate(14)">
+        <path d="M0 0C48-34 112-21 138 31C165 84 135 153 78 178C22 202-35 168-42 111C-49 57-27 20 0 0Z" fill="var(--ill-main)" stroke="currentColor" strokeWidth="4" />
+        <path d="M23 29C57 8 96 17 111 48C127 80 108 122 73 139C39 156 5 135 1 101C-3 68 8 43 23 29Z" fill="var(--ill-pale)" stroke="currentColor" strokeWidth="3" />
+      </g>
       <Spark x={126} y={184} s={1.3} />
       <Spark x={560} y={535} s={.8} />
       <circle cx="585" cy="618" r="52" fill="none" stroke="currentColor" strokeWidth="2" strokeDasharray="7 11" opacity=".5" />
